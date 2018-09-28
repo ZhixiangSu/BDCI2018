@@ -20,7 +20,8 @@ def get_accurancy(dic):
     TN = 0
     FP = 0
     FN = 0
-    for i in range(len(content)):
+    i = 0
+    while (i < len(content)):
         k = 0
         while (i + k < len(content) and content_id[i] == content_id[i + k]):
             if (subject[i+k]in dic and subject_contains[i][dic[subject[i + k]]] > 0):
@@ -32,6 +33,7 @@ def get_accurancy(dic):
         for j in range(11):
             if (subject_contains[i][j] != 0):
                 FP += 1
+        i+=k+1
     P = TP / (TP + FP)
     R = TP / (TP + FN)
     F1 = 2 * P * R / (P + R)
