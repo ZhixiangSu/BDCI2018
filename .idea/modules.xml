@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RNN.iml" filepath="$PROJECT_DIR$/.idea/RNN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BDCI2018/.idea/BDCI2018.iml" filepath="$PROJECT_DIR$/../BDCI2018/.idea/BDCI2018.iml" />
     </modules>
   </component>
 </project>

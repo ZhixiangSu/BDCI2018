@@ -125,7 +125,7 @@ for iter in range(1, n_iters + 1):
         current_loss = 0
 torch.save(RNN, 'net.pkl')
 '''
-RNN=torch.load('net.pkl')
+BDCI2018=torch.load('net.pkl')
 tests=1000
 correct_num=0
 rnn_optimizer = optim.SGD(rnn.parameters(), lr=learning_rate)
