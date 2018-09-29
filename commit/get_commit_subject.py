@@ -14,6 +14,7 @@ subject_dic= \
      '前脸': 5, '刹车油': 4}
 standard_sub=["价格","价格","内饰","配置","安全性","外观","操控","油耗","空间","舒适性","动力"]
 subject_contains=[]
+dic_contains=[]
 for i in range(len(content)):
     subject_contains.append(np.zeros(11,dtype=np.int).tolist())
     for sub in subject_dic:
@@ -32,4 +33,4 @@ for i in range(len(content)):
 result=pd.DataFrame(result)
 result.columns=["content_id","subject","sentiment_value","sentiment_word"]
 result["sentiment_value"]=result["sentiment_value"].astype(int)
-result.to_csv("result.csv",encoding="UTF-8",index=False)
+result.to_csv("result_subject.csv",encoding="UTF-8",index=False)
