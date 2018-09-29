@@ -14,23 +14,19 @@ subject_dic= \
      '前脸': 5, '刹车油': 4}
 standard_sub=["价格","价格","内饰","配置","安全性","外观","操控","油耗","空间","舒适性","动力"]
 subject_contains=[]
-dic_contains=[]
+result=[]
 for i in range(len(content)):
     subject_contains.append(np.zeros(11,dtype=np.int).tolist())
+    has=0
     for sub in subject_dic:
+        has=1
         num=content.values[i].count(sub)
-        subject_contains[i][subject_dic[sub]]+=num
-result=[]
-num2=0
-for i in range(len(content)):
-    num=0
-    for j in range(len(standard_sub)):
-        if(subject_contains[i][j]>0):
-            result.append([raw["content_id"].values[i],standard_sub[j],0,None])
-            num+=1
-    if(num==0):
-        result.append([raw["content_id"].values[i],standard_sub[0],0,None])
+        if(num>0 and subject_contains[i][subject_dic[sub]]==0):
+            subject_contains[i][subject_dic[sub]]=1
+            result.append([raw["content_id"].values[i],raw["content"].values[i], standard_sub[subject_dic[sub]], 0, None,sub])
+    if(has==0):
+           result.append([raw["content_id"].values[i],raw["content"].values[i],None,0,None,None])
 result=pd.DataFrame(result)
-result.columns=["content_id","subject","sentiment_value","sentiment_word"]
+result.columns=["content_id","content","subject","sentiment_value","sentiment_word","key_word"]
 result["sentiment_value"]=result["sentiment_value"].astype(int)
 result.to_csv("result_subject.csv",encoding="UTF-8",index=False)
