@@ -1,9 +1,11 @@
 import re
 import pandas as pd
+import numpy as np
 from gensim.models.word2vec import Word2Vec
 import jieba.posseg as pseg
 import jieba
 raw=pd.read_csv("train.csv")
+result=pd.read_csv("./commit/result.csv")
 content=raw['content']
 subject=raw['subject']
 positive_words=open("positive_words.txt",encoding="UTF-8").read().split("\n")
@@ -46,16 +48,17 @@ for i in range(len(content)):
             if(has==False):
                 sentiment_value_words=0.
             sentiment_value[i]+=sentiment_value_words
-for value in sentiment_value:
-    if(value>0):
-        value=1
-    elif value<0:
-        value=-1
+for i in range(len(sentiment_value)):
+    if(sentiment_value[i]>0):
+        sentiment_value[i]=1
+    elif sentiment_value[i]<0:
+        sentiment_value[i]=-1
 num=0
-sentiment_value=pd.DataFrame(sentiment_value)
+sentiment_value=pd.DataFrame(sentiment_value,dtype=np.int)
 for i in range(len(content)):
     if(raw["sentiment_value"][i]==sentiment_value.values[i]):
         num+=1
 print(num/len(content))
-raw["sentiment_value"]=sentiment_value
-raw.to_csv("predict_value.csv")
+result["sentiment_value"]=sentiment_value
+result["sentiment_value"]=result["sentiment_value"].astype(int)
+result.to_csv("predict_value.csv",encoding="UTF-8",index=False)
