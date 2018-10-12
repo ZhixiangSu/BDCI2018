@@ -4,6 +4,13 @@ import torch
 import numpy as np
 import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+raw = pd.read_csv("train.csv")
+content_id = raw["content_id"]
+content2 = raw["content"]
+subject = raw["subject"]
+subject_dic2 = {"价格": 0, "内饰": 1, "配置": 2, "安全性": 3, "外观": 4, "操控": 5, "油耗": 6, "空间": 7, "舒适性": 8, "动力": 9}
+standard_sub = ["价格", "内饰", "配置", "安全性", "外观", "操控", "油耗", "空间", "舒适性", "动力"]
 dele=pd.read_csv("specify_word_tfidf.csv")
 raw = pd.read_csv("train.csv")
 subject_dic = {"价格": 1, "内饰": 2, "配置": 3, "安全性": 4, "外观": 5, "操控": 6, "油耗": 7, "空间": 8, "舒适性": 9, "动力": 10}
@@ -130,11 +137,71 @@ word = tfidf.get_feature_names()
 temp = pd.DataFrame(weight)
 temp.columns = word
 key_words = []
+def get_accuracy(threshold=0.19):
+    subject_contains = []
+    TP = 0
+    TN = 0
+    FP = 0
+    FN = 0
+    i = 0
+    while (i < len(content2)):
+        k = 0
+        while (i + k < len(content2) and content_id[i + k] == content_id[i]):
+            if (tf_idf.values[i][subject_dic2[subject.values[i + k]]] > threshold):
+                TP += 1
+            else:
+                FN += 1
+            tf_idf.values[i][subject_dic2[subject.values[i]]] = 0
+            k += 1
+        for j in range(len(standard_sub)):
+            if (tf_idf.values[i][j] > threshold):
+                FP += 1
+        i += k
+    P = TP / (TP + FP)
+    R = TP / (TP + FN)
+    F1 = 2 * P * R / (P + R)
+    return F1, FN, FP
 for i in range(1, len(subject_dic) + 1):
     temp2 = temp.sort_values(axis=1, by=i, ascending=False)
     key_words += temp2.columns.tolist()[0:100]
-key_words = list(set(key_words))
-removed=[0 for i in range(len(key_words))]
-print(key_words)
-# values["subject"]=raw["subject"]
-temp.to_csv("tf_idf"".csv", encoding="gbk", index=False)
+key_words_raw = list(set(key_words))
+li=0.7801440329218108
+removed = [0 for i in range(len(key_words))]
+try:
+    for l in range(len(key_words_raw)):
+        key_words=key_words_raw.copy()
+        key_words.remove(key_words[l])
+        words_tfidf = temp[key_words]
+        print(key_words)
+        values = [[] for i in range(len(raw))]
+        for i in range(len(raw)):
+            for j in range(1, len(subject_dic) + 1):
+                v = 0
+                words = jieba.lcut(raw["content"].values[i])
+                for word in words:
+                    if (word in words_tfidf.columns.tolist()):
+                        v += words_tfidf[word].values[j]
+                values[i].append(v)
+        values = pd.DataFrame(values)
+        values.columns = standard_sub
+        data = []
+        tf_idf = values
+        for i in range(len(tf_idf)):
+            sum = 0
+            for j in range(len(tf_idf.values[i])):
+                sum += tf_idf.values[i][j]
+            for j in range(len(tf_idf.values[i])):
+                tf_idf.values[i][j] /= sum
+        temp3=get_accuracy()[0]
+        if(temp3>li):
+            print(temp3)
+            removed[l]=1
+except Exception  as e:
+    print("error")
+final_key=[]
+for l in range(len(key_words_raw)):
+    if(removed[l]==0):
+        final_key.append(key_words_raw[l])
+print(final_key)
+final_key=pd.DataFrame(final_key)
+final_key.to_csv("final_key.csv")

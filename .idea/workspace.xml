@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d81cdcb1-7468-4d4e-a297-f37c51df0ea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/specify_ threshold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commit/get_commit_subject_tfidf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/specify_threshold.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/format_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/format_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_key_word_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_key_word_tfidf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/specify_ threshold.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-idf.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,35 +104,38 @@
     <session id="354032273">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="12" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="12" />
+          <entry key="py" value="21" />
+          <entry key="s" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1737" />
+          <entry key="dummy" value="9" />
+          <entry key="py" value="3626" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1737" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="3626" />
         </counts>
       </usages-collector>
     </session>
@@ -135,38 +143,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_sentiment_value_word.py">
+        <entry file="file://$PROJECT_DIR$/get_key_word_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="979">
+              <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specify_word_tfidf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
               <folding>
-                <element signature="e#12#31#0" expanded="true" />
+                <element signature="e#13#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_key_word_tfidf.py">
+        <entry file="file://$PROJECT_DIR$/specify_threshold.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-              <folding>
-                <element signature="e#12#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/specify_ threshold.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#12#31#0" expanded="true" />
-                <marker date="1539153259678" expanded="true" signature="441:442" ph="..." />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -191,6 +201,12 @@
       <find>省油</find>
       <find>好看</find>
       <find>高</find>
+      <find>森林</find>
+      <find>removed</find>
+      <find>新款</find>
+      <find>四驱</find>
+      <find>距离</find>
+      <find>安全性</find>
     </findStrings>
     <replaceStrings>
       <replace>#print</replace>
@@ -210,7 +226,6 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/1.py" />
-        <option value="$PROJECT_DIR$/format_word.py" />
         <option value="$PROJECT_DIR$/get_values.py" />
         <option value="$PROJECT_DIR$/specify_words.py" />
         <option value="$PROJECT_DIR$/get_key_words.py" />
@@ -224,14 +239,18 @@
         <option value="$PROJECT_DIR$/commit/get_commit_subject.py" />
         <option value="$PROJECT_DIR$/sentiment_value_with_dic.py" />
         <option value="$PROJECT_DIR$/get_sentiment_value_word.py" />
-        <option value="$PROJECT_DIR$/get_key_word_tfidf.py" />
         <option value="$PROJECT_DIR$/specify_ threshold.py" />
+        <option value="$PROJECT_DIR$/format_word.py" />
+        <option value="$PROJECT_DIR$/specify_word_tfidf.py" />
+        <option value="$PROJECT_DIR$/get_key_word_tfidf.py" />
+        <option value="$PROJECT_DIR$/specify_threshold.py" />
+        <option value="$PROJECT_DIR$/commit/get_commit_subject_tfidf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1235" />
-    <option name="y" value="-15" />
+    <option name="x" value="924" />
+    <option name="y" value="-8" />
     <option name="width" value="591" />
     <option name="height" value="1000" />
   </component>
@@ -284,8 +303,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.specify_ threshold">
-    <configuration name="get_commit_subject" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.get_commit_subject_tfidf">
+    <configuration name="format_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BDCI2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/format_word.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_commit_subject_tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,7 +337,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commit/get_commit_subject.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commit/get_commit_subject_tfidf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,7 +346,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_key_word_tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_key_word_tfidf (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,7 +367,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_sentiment_value_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="specify_threshold" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,7 +379,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_sentiment_value_word.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/specify_threshold.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,7 +388,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sentiment_value_with_dic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="specify_word_tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -360,28 +400,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentiment_value_with_dic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="specify_ threshold" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BDCI2018" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/specify_ threshold.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/specify_word_tfidf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,19 +410,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.get_commit_subject" />
-      <item itemvalue="Python.sentiment_value_with_dic" />
-      <item itemvalue="Python.get_sentiment_value_word" />
-      <item itemvalue="Python.get_key_word_tfidf" />
-      <item itemvalue="Python.specify_ threshold" />
+      <item itemvalue="Python.get_key_word_tfidf (1)" />
+      <item itemvalue="Python.specify_threshold" />
+      <item itemvalue="Python.specify_word_tfidf" />
+      <item itemvalue="Python.format_word" />
+      <item itemvalue="Python.get_commit_subject_tfidf" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.specify_ threshold" />
-        <item itemvalue="Python.get_key_word_tfidf" />
-        <item itemvalue="Python.get_sentiment_value_word" />
-        <item itemvalue="Python.sentiment_value_with_dic" />
-        <item itemvalue="Python.get_commit_subject" />
+        <item itemvalue="Python.get_commit_subject_tfidf" />
+        <item itemvalue="Python.get_key_word_tfidf (1)" />
+        <item itemvalue="Python.specify_word_tfidf" />
+        <item itemvalue="Python.format_word" />
+        <item itemvalue="Python.specify_threshold" />
       </list>
     </recent_temporary>
   </component>
@@ -430,15 +449,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09141056" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09141056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.22638564" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39812645" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286495" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.22638564" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39656517" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -530,9 +548,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/get_key_word_tfidf.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/specify_ threshold_sp.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -684,9 +702,6 @@
     <entry file="file://$PROJECT_DIR$/negative_words.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/s">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/commit/result.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -715,13 +730,6 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format_word.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -764,9 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,9 +796,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/s" />
+    <entry file="file://$PROJECT_DIR$/get_key_word_tfidf_sp.py" />
+    <entry file="file://$PROJECT_DIR$/specify_ threshold_sp.py" />
+    <entry file="file://$PROJECT_DIR$/get_sentiment_value_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/format_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/commit/get_commit_subject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="113">
           <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
           <folding>
             <element signature="e#15#34#0" expanded="true" />
@@ -801,33 +823,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_sentiment_value_word.py">
+    <entry file="file://$PROJECT_DIR$/specify_threshold.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_key_word_tfidf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-          <folding>
-            <element signature="e#12#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="979">
+          <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/specify_ threshold.py">
+    <entry file="file://$PROJECT_DIR$/specify_word_tfidf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="725">
+          <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
-            <element signature="e#12#31#0" expanded="true" />
-            <marker date="1539153259678" expanded="true" signature="441:442" ph="..." />
+            <element signature="e#13#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
