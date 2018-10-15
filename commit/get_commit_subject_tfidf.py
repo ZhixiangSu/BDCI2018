@@ -38,10 +38,10 @@ for i in range(len(tf_idf)):
     for j in range(len(standard_sub)):
         if (tf_idf.values[i][j] > threshold):
             has=True
-            result_tfidf.append([raw["content_id"].values[i],standard_sub[j],0,None])
+            result_tfidf.append([raw["content_id"].values[i],raw["content"].values[i],standard_sub[j],0,None])
     if(has==False):
-        result_tfidf.append([raw["content_id"].values[i],standard_sub[0], 0, None])
+        result_tfidf.append([raw["content_id"].values[i],raw["content"].values[i],standard_sub[0], 0, None])
 result_tfidf=pd.DataFrame(result_tfidf)
-result_tfidf.columns=["content_id","subject","sentiment_value","sentiment_word"]
+result_tfidf.columns=["content_id","content","subject","sentiment_value","sentiment_word"]
 result_tfidf["sentiment_value"]=result_tfidf["sentiment_value"].astype(int)
 result_tfidf.to_csv("result_tfidf.csv",encoding="UTF-8",index=False)
