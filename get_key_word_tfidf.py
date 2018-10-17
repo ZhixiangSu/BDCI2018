@@ -124,6 +124,7 @@ writer=pd.ExcelWriter("content_cut_data.xlsx")
 content_cut_data.to_excel(writer)
 writer.close()
 '''
+print(content)
 tfidf = TfidfVectorizer(token_pattern=r"(?u)\b\w\w+\b", stop_words=stop_list)
 weight = tfidf.fit_transform(content).toarray()
 word = tfidf.get_feature_names()
