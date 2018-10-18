@@ -5,12 +5,12 @@ import numpy as np
 import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
 raw = pd.read_csv("../train.csv")
+sentiment_word=raw["sentiment_word"]
+sentiment_value=raw["sentiment_value"]
 sentiment_value_dic={-1:0,0:1,1:2}
 subject_dic = {"价格": 1, "内饰": 2, "配置": 3, "安全性": 4, "外观": 5, "操控": 6, "油耗": 7, "空间": 8, "舒适性": 9, "动力": 10}
-content = [[[]for j in range(len(sentiment_value_dic))] for i in range(len(subject_dic) + 1)]
-
-for i in range(len(raw)):
-    content[subject_dic[raw["subject"].values[i]]][raw["sentiment_value"].values[i]+1].append(raw["content"].values[i])
+del_list=["不","没有","没","不是"]
+standard_sub = ["价格", "内饰", "配置", "安全性", "外观", "操控", "油耗", "空间", "舒适性", "动力"]
 stop_list = [
     "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", "--", ".", "..", "...", "......",
     "...................", "./", ".一", ".数", ".日", "/", "//", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":",
@@ -113,44 +113,21 @@ stop_list = [
     "［③ｈ］", "［④］", "［④ａ］", "［④ｂ］", "［④ｃ］", "［④ｄ］", "［④ｅ］", "［⑤］", "［⑤］］", "［⑤ａ］", "［⑤ｂ］", "［⑤ｄ］", "［⑤ｅ］", "［⑤ｆ］", "［⑥］",
     "［⑦］", "［⑧］", "［⑨］", "［⑩］", "［＊］", "［－", "［］", "］", "］∧′＝［", "］［", "＿", "ａ］", "ｂ］", "ｃ］", "ｅ］", "ｆ］", "ｎｇ昉", "｛",
     "｛－", "｜", "｝", "｝＞", "～", "～±", "～＋", "￥", ]
-del_list=["不","没有","没","不是"]
-standard_sub = ["价格", "内饰", "配置", "安全性", "外观", "操控", "油耗", "空间", "舒适性", "动力"]
-content_cut=[]
-num=0
-for word in del_list:
-    jieba.del_word(word)
-for i in range(1,len(content)):
-    for j in range(len(content[i])):
-        content_cut.append([])
-        for k in range(len(content[i][j])):
-            temp=jieba.lcut(content[i][j][k])
-            temp=" ".join(temp)
-            content_cut[num].append(temp)
-        content_cut[num]=" ".join(content_cut[num])
-        num+=1
-content=content_cut
-row=[]
-for i in range(len(standard_sub)):
-    for j in range(3):
-        row.append(standard_sub[i]+str(j-1))
-print(row)
-'''
-content_cut_data=pd.DataFrame(content_cut)
-writer=pd.ExcelWriter("content_cut_data.xlsx")
-content_cut_data.to_excel(writer)
-writer.close()
-'''
+words=[[],[],[]]
+words_space=words.copy()
+for i in range(len(sentiment_word)):
+    if(sentiment_word[i] is not np.nan and len(sentiment_word[i])<5):
+        words[sentiment_value[i]+1].append(sentiment_word[i])
+        if(sentiment_word[i].count("不")==0):
+            jieba.add_word("不"+sentiment_word[i])
+        else:
+            jieba.add_word(sentiment_word[i])
+for i in range(3):
+    words_space[i]=" ".join(words[i])
+
 tfidf = TfidfVectorizer(token_pattern=r"(?u)\b\w\w+\b", stop_words=stop_list)
-weight = tfidf.fit_transform(content).toarray()
+weight = tfidf.fit_transform(words_space).toarray()
 word = tfidf.get_feature_names()
 temp = pd.DataFrame(weight)
-temp.columns = word
-key_words = []
-for i in range(30):
-    temp2 = temp.sort_values(axis=1, by=i, ascending=False)
-    if(i%3!=1):
-        key_words += temp2.columns.tolist()[0:30]
-key_words = list(set(key_words))
-print(key_words)
-# values["subject"]=raw["subject"]
-temp.to_csv("tf_idf.csv", encoding="gbk", index=False)
+temp.columns=word
+temp.to_csv("sentiment_words_tf_idf.csv", encoding="gbk", index=False)

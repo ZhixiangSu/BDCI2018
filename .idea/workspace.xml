@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d81cdcb1-7468-4d4e-a297-f37c51df0ea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commit/tfidf_sentiment_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentiment_value_test/get_value_sentiment_words.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentiment_value_test/sentiment_word_tfidf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/format_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/format_word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_key_word_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_key_word_tfidf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rnn.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/rnn.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specify_threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/specify_threshold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,21 +106,21 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="10" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.3" value="11" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="97" />
+          <entry key="Python" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="py" value="97" />
+          <entry key="py" value="116" />
           <entry key="s" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -131,14 +128,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="py" value="9297" />
-          <entry key="txt" value="10" />
+          <entry key="py" value="9836" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="9297" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="9836" />
         </counts>
       </usages-collector>
     </session>
@@ -149,10 +146,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py">
+        <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_word_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5328">
-              <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+            <state relative-caret-position="936">
+              <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+              <folding>
+                <element signature="e#512#12361#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commit/get_commit_subject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -160,47 +178,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="12" />
+            <state relative-caret-position="-1758">
+              <caret line="16" column="112" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specify_word_tfidf.py">
+        <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3636">
-              <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+            <state relative-caret-position="324">
+              <caret line="13" selection-start-line="13" selection-end-line="114" selection-end-column="49" />
               <folding>
-                <element signature="e#816#12665#0" />
+                <element signature="e#570#12419#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/specify_threshold.py">
+        <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commit/tfidf_sentiment_value.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1487">
-              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1476">
-              <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="75" />
+            <state relative-caret-position="458">
+              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -241,6 +241,8 @@
       <find>values =</find>
       <find>tf_idf_s</find>
       <find>0.</find>
+      <find>没</find>
+      <find>REMOVED</find>
     </findStrings>
     <replaceStrings>
       <replace>#print</replace>
@@ -284,19 +286,21 @@
         <option value="$PROJECT_DIR$/get_key_word_tfidf.py" />
         <option value="$PROJECT_DIR$/specify_threshold.py" />
         <option value="$PROJECT_DIR$/commit/get_commit_subject_tfidf.py" />
+        <option value="$PROJECT_DIR$/format_word.py" />
+        <option value="$PROJECT_DIR$/commit/tfidf_sentiment_value.py" />
         <option value="$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py" />
         <option value="$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py" />
-        <option value="$PROJECT_DIR$/format_word.py" />
+        <option value="$PROJECT_DIR$/sentiment_value_test/sentiment_word_tfidf.py" />
+        <option value="$PROJECT_DIR$/sentiment_value_test/get_value_sentiment_words.py" />
         <option value="$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py" />
-        <option value="$PROJECT_DIR$/commit/tfidf_sentiment_value.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3023" />
-    <option name="y" value="-525" />
-    <option name="width" value="1449" />
-    <option name="height" value="1407" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1456" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -352,28 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tfidf_sentiment_value">
-    <configuration name="format_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BDCI2018" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/format_word.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.get_sentiment_value_tfidf">
     <configuration name="get_sentiment_value_tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -387,6 +370,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_value_sentiment_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BDCI2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentiment_value_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentiment_value_test/get_value_sentiment_words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,7 +441,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tfidf_sentiment_value" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sentiment_word_tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BDCI2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -445,11 +449,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/commit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentiment_value_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commit/tfidf_sentiment_value.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentiment_value_test/sentiment_word_tfidf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -462,15 +466,15 @@
       <item itemvalue="Python.sentiment_value_tfidf" />
       <item itemvalue="Python.get_sentiment_value_tfidf" />
       <item itemvalue="Python.sentiment_value_specify_word_tfidf" />
-      <item itemvalue="Python.format_word" />
-      <item itemvalue="Python.tfidf_sentiment_value" />
+      <item itemvalue="Python.sentiment_word_tfidf" />
+      <item itemvalue="Python.get_value_sentiment_words" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tfidf_sentiment_value" />
         <item itemvalue="Python.get_sentiment_value_tfidf" />
-        <item itemvalue="Python.format_word" />
         <item itemvalue="Python.sentiment_value_specify_word_tfidf" />
+        <item itemvalue="Python.get_value_sentiment_words" />
+        <item itemvalue="Python.sentiment_word_tfidf" />
         <item itemvalue="Python.sentiment_value_tfidf" />
       </list>
     </recent_temporary>
@@ -500,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539588851712</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2018.10.17">
+      <created>1539761028289</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539761028289</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -513,23 +524,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-525" width="1456" height="2536" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12764457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.071316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Statistic" visible="true" weight="0.32986256" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286495" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.16534777" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39578456" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49858958" visible="true" weight="0.30991414" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49858958" weight="0.39566848" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32943013" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32902956" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32943013" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32943013" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.257329" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014104" side_tool="true" weight="0.39566848" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32943013" />
+      <window_info anchor="bottom" id="Statistic" order="11" weight="0.32986256" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -589,7 +601,8 @@
     </ignored-roots>
     <MESSAGE value="2018.9.29" />
     <MESSAGE value="2018.10.15" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018.10.15" />
+    <MESSAGE value="2018.10.17" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018.10.17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,10 +710,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/sklearn/base.py" />
-    <entry file="file://$PROJECT_DIR$/sub_dic.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/commit/test_public.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -773,13 +782,6 @@
     <entry file="file://$PROJECT_DIR$/s" />
     <entry file="file://$PROJECT_DIR$/get_key_word_tfidf_sp.py" />
     <entry file="file://$PROJECT_DIR$/specify_ threshold_sp.py" />
-    <entry file="file://$PROJECT_DIR$/commit/get_commit_subject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/gensim/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -932,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/jieba/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_key_word_tfidf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -956,58 +951,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5328">
-          <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specify_word_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3636">
-          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
-          <folding>
-            <element signature="e#816#12665#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specify_threshold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3171">
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,10 +967,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/specify_word_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specify_threshold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/commit/tfidf_sentiment_value.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1487">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        <state relative-caret-position="1008">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/Lib/site-packages/jieba/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="393" column="8" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" selection-start-line="13" selection-end-line="114" selection-end-column="49" />
+          <folding>
+            <element signature="e#570#12419#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_value_specify_word_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_value_test/get_value_sentiment_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_value_test/get_sentiment_value_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1758">
+          <caret line="16" column="112" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentiment_value_test/sentiment_word_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+          <folding>
+            <element signature="e#512#12361#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commit/get_commit_subject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commit/get_commit_subject_tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
         </state>
       </provider>
     </entry>
