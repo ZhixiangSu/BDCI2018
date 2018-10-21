@@ -76,6 +76,7 @@ def TrainingExample(i):
         category=-category
     category_tensor=torch.tensor([category+1],dtype=torch.long)
     line_tensor=content2tensor(content2vec[i])
+    print(line_tensor)
     return category,line,category_tensor,line_tensor
 criterion = nn.NLLLoss()
 learning_rate = 0.005

@@ -3,6 +3,7 @@ import pandas as pd
 import torch
 import numpy as np
 import jieba
+import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 raw = pd.read_csv("test_public.csv",encoding="UTF-8")
 subject_dic = {"价格": 1, "内饰": 2, "配置": 3, "安全性": 4, "外观": 5, "操控": 6, "油耗": 7, "空间": 8, "舒适性": 9, "动力": 10}
@@ -12,15 +13,29 @@ key_words=["家庭","恭喜","报价","上下班","塑料","轴承","耐看","减震","优势","500
 temp=pd.read_csv("../tf_idf.csv",encoding="gbk")
 words_tfidf = temp[key_words]
 values = [[] for i in range(len(raw))]
+sp_content=[[] for i in range(len(raw))]
+sp_word=[]
 for i in range(len(raw)):
     for j in range(1, len(subject_dic) + 1):
         v = 0
+        max_tfidf=0
+        max_word=""
         words = jieba.lcut(raw["content"].values[i])
         for word in words:
             if (word in words_tfidf.columns.tolist()):
+                if(words_tfidf[word].values[j]>max_tfidf):
+                    max_tfidf=words_tfidf[word].values[j]
+                    max_word=word
                 v += words_tfidf[word].values[j]
         values[i].append(v)
+        sp_word.append(max_word)
+        sentences=re.split("[，。！]",raw["content"].values[i])
+        for sentence in sentences:
+            if(sentence.count(max_word)>0):
+                sp_content[i].append(sentence)
+                break
 values = pd.DataFrame(values)
+sp_content=pd.DataFrame(sp_content)
 values.columns = standard_sub
 # values["subject"]=raw["subject"]
 tf_idf=values
@@ -34,14 +49,17 @@ threshold=0.19
 print(tf_idf)
 result_tfidf=[]
 for i in range(len(tf_idf)):
+    if (i > 0 and raw["content_id"][i] == raw["content_id"][i - 1]):
+        continue
     has=False
     for j in range(len(standard_sub)):
         if (tf_idf.values[i][j] > threshold):
             has=True
-            result_tfidf.append([raw["content_id"].values[i],raw["content"].values[i],standard_sub[j],0,None])
+            result_tfidf.append([raw["content_id"].values[i], sp_content.values[i][j], standard_sub[j],0, None, sp_word[i]])
     if(has==False):
-        result_tfidf.append([raw["content_id"].values[i],raw["content"].values[i],standard_sub[0], 0, None])
+        result_tfidf.append(
+            [raw["content_id"].values[i], sp_content.values[i][0], standard_sub[0], 0,None, sp_word[i]])
 result_tfidf=pd.DataFrame(result_tfidf)
-result_tfidf.columns=["content_id","content","subject","sentiment_value","sentiment_word"]
+result_tfidf.columns=["content_id","content","subject","sentiment_value","sentiment_word","sp_word"]
 result_tfidf["sentiment_value"]=result_tfidf["sentiment_value"].astype(int)
 result_tfidf.to_csv("result_tfidf.csv",encoding="UTF-8",index=False)

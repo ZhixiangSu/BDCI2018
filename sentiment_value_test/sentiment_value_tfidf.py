@@ -4,7 +4,7 @@ import torch
 import numpy as np
 import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
-raw = pd.read_csv("../train.csv")
+raw = pd.read_csv("result_tfidf.csv")
 sentiment_value_dic={-1:0,0:1,1:2}
 subject_dic = {"价格": 1, "内饰": 2, "配置": 3, "安全性": 4, "外观": 5, "操控": 6, "油耗": 7, "空间": 8, "舒适性": 9, "动力": 10}
 content = [[[]for j in range(len(sentiment_value_dic))] for i in range(len(subject_dic) + 1)]
@@ -148,8 +148,7 @@ temp.columns = word
 key_words = []
 for i in range(30):
     temp2 = temp.sort_values(axis=1, by=i, ascending=False)
-    if(i%3!=1):
-        key_words += temp2.columns.tolist()[0:30]
+    key_words += temp2.columns.tolist()[0:30]
 key_words = list(set(key_words))
 print(key_words)
 # values["subject"]=raw["subject"]
